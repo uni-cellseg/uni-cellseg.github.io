@@ -101,6 +101,7 @@ button {
     background-color: var(--buttons-color);
     border: none;
     border-radius: 12px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 button a {
@@ -378,7 +379,7 @@ button.active {
 }
 
 .section h2 {
-    font-size: 25px;
+    font-size: 33px;
     margin-bottom: -10px;
     color: var(--headings-color);
     font-family: 'Google Sans', sans-serif;
@@ -428,7 +429,15 @@ button.active {
     margin-bottom: 10px;
     font-size: 15px;
     color: var(--text-color);
-    /* Darker color for the heading */
+    text-align: left;
+}
+
+.subsection figcaption ol {
+    font-size: 15px; 
+    list-style-type: lower-alpha;
+}
+.subsection figcaption ol li {
+    font-size: 15px; 
 }
 
 .subsection p {
@@ -452,6 +461,7 @@ button.active {
     text-align: justify !important;
     margin-left: 0px;
     padding-left: 0px; 
+    font-size: 1.4em;
 }
 
 .subsection a {
@@ -494,6 +504,7 @@ button.active {
     font-size: 20px;
     width: 100%;
     color: var(--buttons-color);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 #networkImage {
@@ -584,12 +595,14 @@ code {
     font-family: monospace;
     -moz-osx-font-smoothing: auto;
     -webkit-font-smoothing: auto;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 th,

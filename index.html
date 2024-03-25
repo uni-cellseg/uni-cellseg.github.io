@@ -61,7 +61,7 @@
 
         <div class="header" , id="header">
             <h1>The Multi-modality Cell Segmentation Challenge:</h1>
-            <p class="subheading">Towards Universal Solutions</p>
+            <h1 class="subheading">Towards Universal Solutions</h1>
             <p class="paper-links">
                 <a href="https://neurips22-cellseg.grand-challenge.org/" target="_blank" rel=noopener>
                     <button>
@@ -105,22 +105,19 @@
                 </ul>
             </div>
             <div class="subsection" id="NetworkDetail">
-                <div class="subsection" id="Figure2">
-                    <figure>
-                        <img src="static/images/data.png" , class="image" alt="">
-                    </figure>
-                </div>
-
                 <div class="subsection" id="Figure3">
                     <figure>
-                        <img src="static/images/participants.png" , class="image" alt="">
-                        <figcaption>The geographical distribution of data sources and challenge participants.
-                            The red, green, purple, and blue address icons denote the countries or regions where the
-                            brightfield,
-                            fluorescent, phase-contrast, and differential interference contrast image datasets are from,
-                            respectively.
-                            The size of the pink circle in each country is proportional
-                            to the number of participants from the corresponding country.</figcaption>
+                        <img src="static/images/data.png" , class="image" alt="">
+                        <figcaption><ol>
+                            <li> The challenge provides a diverse microscopy image dataset that includes tissue cells, cultured cells, label-free cells, stained
+                            cells, and different microscopes (i.e., brightfield, fluorescent, phase-contrast (PC), and (Differential Interference Contrast) DIC). </li>
+                            <li> The geographical distribution of data sources and challenge participants. The red, green, purple, and blue address icons denote the countries or regions where the brightfield, fluorescent, phase-contrast, and differential interference contrast image datasets are from, respectively. The size of the pink circle in each country is proportional to the number of participants from the corresponding country. </li>
+                            <li> The number of images in the training set. </li>
+                            <li> The number of labeled cells in the training set. </li>
+                            <li> Randomly selected examples (from left to right: brightfield, fluorescent, PC, and DIC images) from the training set (the 1st row) and testing set (the 2nd row). </li>
+                            <li> The number of images in the testing set. </li>
+                            <li> The number of cells in the testing set. There are two fluorescent whole-slide images (WSI) in the testing set.</li>
+                        </ol></figcaption>
                     </figure>
                 </div>
             </div>
