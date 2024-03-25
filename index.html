@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="The Multi-modality Cell Segmentation Challenge: Towards Universal Solutions">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <!--Main Scripts-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer=""></script>
+    <!-- MatJax -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async=""
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+        </script>
+    <!--Jquery-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js" defer=""></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js" defer=""></script>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="static/images/logo.png">
+    <link rel="icon" href="static/images/logo.png">
+    <title>The Multi-modality Cell Segmentation Challenge: Towards Universal Solutions</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GEDJJVEK52"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-GEDJJVEK52');
+    </script>
+</head>
+
+<body>
+    <div class="toggle-container">
+        <button id="toggleButton" class="inactive">Dark Mode</button>
+
+        <!-- <div id="navigateAndButton">
+            <a href=#menu class="scroll-link"><button id="jumpTo">Navigate</button></a>
+            <div id="navigation-content">
+                <div id="navigation">
+                    <span class="inline-heading-2"><a href=#header class="scroll-link">Return to Top</a></span>
+                    <span class="inline-heading"><a href=#Highlights class="scroll-link">1. Highlights</a></span>
+                    <span class="inline-heading"><a href=#Network class="scroll-link">2. Network</a></span>
+                    <span class="inline-heading"><a href=#ExperimentsResults class="scroll-link">3. Experiments and
+                            Results</a></span>
+                    <p><a href=#DatasetOverview class="scroll-link">a. Dataset Overview</a></p>
+                    <p><a href=#Results class="scroll-link">b. Results</a></p>
+                    <span class="inline-heading"><a href=#citation class="scroll-link">4. BibTeX</a></span>
+                </div> 
+            </div> 
+        </div>  -->
+    </div>
+
+    <div class="outer-container">
+
+        <div class="header" , id="header">
+            <h1>The Multi-modality Cell Segmentation Challenge:</h1>
+            <p class="subheading">Towards Universal Solutions</p>
+            <p class="paper-links">
+                <a href="https://neurips22-cellseg.grand-challenge.org/" target="_blank" rel=noopener>
+                    <button>
+                        Competition
+                    </button></a>
+                <a href="https://www.nature.com/articles/s41592-024-02233-6" target="_blank" rel=noopener>
+                    <button>
+                        <span class="icon">
+                            <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z">
+                                </path>
+                            </svg><!-- <i class="fas fa-file-pdf"></i> Font Awesome fontawesome.com -->
+                        </span>
+                        Paper
+                    </button></a>
+                <a href="https://neurips22-cellseg.grand-challenge.org/dataset/" target="_blank" rel=noopener>
+                    <button>
+                        Dataset
+                    </button></a>
+            </p>
+        </div>
+
+        <div class="section">
+            <div class="subsection" id="Figure1">
+                <figure>
+                    <img src="static/images/task-intro.gif" , class="image" alt="">
+                </figure>
+            </div>
+        </div>
+        <div class="section">
+            <h2>A large and diverse microscopy image dataset</h2>
+            <div class="subsection" id="NetworkDetail">
+                <ul>
+                    <li>50+ different biological experiments</li>
+                    <li>Four different microscopes</li>
+                    <li>900,000+ annotated cells</li>
+                    <li>Different cell origins, staining methods, morphologies, …</li>
+                </ul>
+            </div>
+            <div class="subsection" id="NetworkDetail">
+                <div class="subsection" id="Figure2">
+                    <figure>
+                        <img src="static/images/data.png" , class="image" alt="">
+                    </figure>
+                </div>
+
+                <div class="subsection" id="Figure3">
+                    <figure>
+                        <img src="static/images/participants.png" , class="image" alt="">
+                        <figcaption>The geographical distribution of data sources and challenge participants.
+                            The red, green, purple, and blue address icons denote the countries or regions where the
+                            brightfield,
+                            fluorescent, phase-contrast, and differential interference contrast image datasets are from,
+                            respectively.
+                            The size of the pink circle in each country is proportional
+                            to the number of participants from the corresponding country.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>The top algorithms set new state of the arts</h2>
+            <div class="subsection" id="NetworkDetail">
+                <ul>
+                    <li>The winning team, boasting a Transformer-based architecture, has proven to be a remarkable
+                        achievement in cell segmentation.</li>
+                    <li>Top algorithms demonstrated exceptional accuracy and efficiency, surpassing existing
+                        state-of-the-art cell segmentation methods such as Cellpose and Omnipose as well as the top
+                        algorithm in the CTC challenge.</li>
+                    <li>All top algorithms have made the code and models publicly available.</li>
+                </ul>
+                <div class="subsection" id="Table1">
+                    <table>
+                        <!-- <caption>Table 1. Dataset information.</caption> -->
+                        <tr>
+                            <th>Top Teams</th>
+                            <th>Method</th>
+                            <th>Implementation</th>
+                            <th>Tutorial</th>
+                            <th>Interface</th>
+                            <th>Container</th>
+                        </tr>
+                        <tr>
+                            <td>T1-osilab</td>
+                            <td><a href="https://proceedings.mlr.press/v212/lee23a.html"
+                                    style="text-decoration: underline;">Paper</a></td>
+                            <td><a href="https://github.com/Lee-Gihun/MEDIAR"
+                                    style="text-decoration: underline;">Code</a></td>
+                            <td><a href="https://colab.research.google.com/drive/1iFnGu6A_p-5s_eATjNtfjb9-MR5L3pLB?usp=sharing"
+                                    style="text-decoration: underline;">Colab</a></td>
+                            <td><a href="https://github.com/joonkeekim/mediar-napari"
+                                    style="text-decoration: underline;">Napari</a></td>
+                            <td><a href="https://hub.docker.com/repository/docker/joonkeekim/mediar/general"
+                                    style="text-decoration: underline;">Docker</a></td>
+                        </tr>
+                        <tr>
+                            <td>T2-sribdmed</td>
+                            <td><a href="https://proceedings.mlr.press/v212/lou23a.html"
+                                    style="text-decoration: underline;">Paper</a></td>
+                            <td><a href="https://github.com/lhaof/CellSeg" style="text-decoration: underline;">Code</a>
+                            </td>
+                            <td><a href="https://colab.research.google.com/drive/1Dk6V6vm0IqaIevjAyjUTuR1nZfT6EvCh?usp=sharing"
+                                    style="text-decoration: underline;">Colab</a></td>
+                            <td><a href="https://github.com/Lewislou/cellseg_sribd_napari"
+                                    style="text-decoration: underline;">Napari</a></td>
+                            <td><a href="https://hub.docker.com/repository/docker/lewislou/sribd-cellseg"
+                                    style="text-decoration: underline;">Docker</a></td>
+                        </tr>
+                        <tr>
+                            <td>T3-cells</td>
+                            <td><a href="https://proceedings.mlr.press/v212/upschulte23a.html"
+                                    style="text-decoration: underline;">Paper</a></td>
+                            <td><a href="https://github.com/FZJ-INM1-BDA/neurips22-cell-seg"
+                                    style="text-decoration: underline;">Code</a></td>
+                            <td><a href="https://colab.research.google.com/drive/1Ycc2X131lmlU50Ds8iz8o0KSgLWDjO9H"
+                                    style="text-decoration: underline;">Colab</a></td>
+                            <td><a href="https://github.com/FZJ-INM1-BDA/celldetection-napari"
+                                    style="text-decoration: underline;">Napari</a></td>
+                            <td><a href="https://hub.docker.com/repository/docker/ericup/neurips22-cell-seg/tags?page=1&ordering=last_updated"
+                                    style="text-decoration: underline;">Docker</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="subsection" id="Figure4">
+                    <figure>
+                        <img src="static/images/results.png" , class="image" alt="">
+                        <figcaption><strong>SOTA algorithms to biological practice:</strong> The top three
+                            best-performing algorithms have been integrated into an open-source and user-friendly <a href="https://github.com/joonkeekim/mediar-napari" style="text-decoration: underline;">napari</a>
+                            interface. Biological researchers can now conveniently apply these advanced segmentation
+                            techniques to their own images without necessitating additional coding.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div id="citation">
+            <h2>BibTeX</h2>
+            <code id="myCode">
+@article{NeurIPS-CellSeg,
+    title = {The Multi-modality Cell Segmentation Challenge: Towards Universal Solutions},
+    author = {Jun Ma and Ronald Xie and Shamini Ayyadhury and Cheng Ge and Anubha Gupta and Ritu Gupta and Song Gu and Yao Zhang and Gihun Lee and Joonkee Kim and Wei Lou and Haofeng Li and Eric Upschulte and Timo Dickscheid and José Guilherme de Almeida and Yixin Wang and Lin Han and Xin Yang and Marco Labagnara and Vojislav Gligorovski and Maxime Scheder and Sahand Jamal Rahi and Carly Kempster and Alice Pollitt and Leon Espinosa and Tâm Mignot and Jan Moritz Middeke and Jan-Niklas Eckardt and Wangkai Li and Zhaoyang Li and Xiaochen Cai and Bizhe Bai and Noah F. Greenwald and David Van Valen and Erin Weisbart and Beth A. Cimini and Trevor Cheung and Oscar Brück and Gary D. Bader and Bo Wang},
+    journal = {Nature Methods},
+    year = {2024},
+    doi = {https://doi.org/10.1038/s41592-024-02233-6}
+}
+            </code>
+            <button id="copyButton">Copy</button>
+            <div id="thanks">
+                <p>
+                    This website template is borrowed from <a
+                        href="https://github.com/boundaryattention/boundaryattention.github.io/" target="_blank"
+                        rel="noopener">here</a>. Thank you!
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
